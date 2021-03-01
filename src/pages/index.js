@@ -1,22 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
+import Layout from '../components/layout';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const index = () => {
+  return (
+    <Layout>
+    <h1>Hello</h1>
+    <h2>“Gatsby is a free and open-source framework based on React that helps developers build blazing-fast websites and apps.” According to the Gatsby team. React is a library meant to provide a particular set of core functionality for developers to leverage. It is intended to be lightweight and broadly applicable.</h2>
+    <p>Need a Developer? then click the link <Link to="/contact">New Developer</Link></p>
+    </Layout>
+     )
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default index;
